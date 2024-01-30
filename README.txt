@@ -10,7 +10,7 @@ The files have the following contents:
 - AFCSP.h/cpp               | code required for the arcflow formulation (which is used by our algorithms)
 - helper_functions.h/cpp    | code containing miscellaneous simple/supportive functions 
 
-Moreover, "InstancesBPPMCF" contains a txt-file for each of our test instances. These are spread over 5 folders, each corresponding to a different data set:
+Moreover, "InstancesBPPMCF.zip" contains a txt-file for each of our test instances. These are spread over 5 folders, each corresponding to a different data set:
 "Dataset 1", "Dataset 2", "Dataset 3" and "Dataset 4" correspond to datasets D1, D2, D3 and D4 as introduced by Mehrani et al. (2022),  and "Triplets" corresponds to D5^*.
 Our new instances D1^*, D2^*, D3^* and D4^* are obtained by setting the number of bins to the minimum number of required bins (see main.cpp),
 where the minimum number of required bins per instance is saved in the file "minNumberOfBinsPerInstance.txt"
