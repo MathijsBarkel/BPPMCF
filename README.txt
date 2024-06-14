@@ -5,7 +5,7 @@ All algorithms are coded in C++ and part of our methods require the commercial s
 The files have the following contents:
 - main.h/cpp                | example of front-end code for calling our methods to solve a given instance
 - BPPLB.h/cpp               | code required for the algorithm BPP-LB
-- BPPUB.h/cpp               | code required for the algorithm BPP-UB
+- BPPUB.h/cpp               | code required for the algorithms BPP-UB and BPP-UB*
 - TS.h/cpp                  | code required for the algorithm TS
 - AFCSP.h/cpp               | code required for the arcflow formulation (which is used by our algorithms)
 - helper_functions.h/cpp    | code containing miscellaneous simple/supportive functions.
