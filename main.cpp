@@ -56,28 +56,13 @@ int main() {
 	Solution solBPPUB = solveBPPUB(inst);
 	solBPPUB.print(true);
 
+	// Apply BPP-UB*
+	Solution solBPPUBexact = solveBPPUB(inst, true, true);
+	solBPPUBexact.print(true);
+	
 	// Apply the tabu search metaheuristic TS starting from the feasible BPP-UB solution
 	Solution solTS = solveTS(inst, solBPPUB);
 	solTS.print(true);
 
 	// --------------------------------------------------------------
 }
-
-/* Guide to setting up a project with Gurobi in Windows:
-right - click on the project name in the solution explorer panel, then select properties.
-set platform to x64
-set configuration to all configurations
-under debugging set environment to path = $(path); $(gurobi_home)\lib
-under c / c++ > general > additional include directories, add: $(gurobi_home)\include
-(under c / c++ > precompiled headers > precompiled header, select not using precompiled headers)
-under linker > general > additional library directories, add: $(gurobi_home)\lib
-set configuration to debug
-under linker > input > additional dependencies, add gurobi91.lib; gurobi_c++mdd2019.lib
-set configuration to release
-under linker > input > additional dependencies, add gurobi91.lib; gurobi_c++md2019.lib
-also set Solution platforms to x64 (top of Visual Studio, not inside properties)
-
-copy-paste this:
-path = $(path); $(gurobi_home)\lib; $(gurobi_home)\include; $(gurobi_home)\lib; gurobi91.lib;gurobi_c++mdd2019.lib; gurobi91.lib;gurobi_c++md2019.lib
-OR for Gurobi 10: path = $(path); $(gurobi_home)\lib; $(gurobi_home)\include; $(gurobi_home)\lib; gurobi100.lib;gurobi_c++mdd2017.lib; gurobi100.lib;gurobi_c++md2017.lib
-*/
