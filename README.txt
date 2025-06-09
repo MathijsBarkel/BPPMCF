@@ -28,6 +28,7 @@ For Datasets 1,2,3 and 4:
 For Dataset 5 (Triplets):
 - The first line contains the number of items I
 - The remaining lines contain a matrix of size Ix2, where each row i gives the color c and the weight w of item i.
+- For these instances we always have B = I/3, W = 1000 and C = 3.
 
 Finally, "Best LBs and UBs.xlsx" contains the best known lower bounds and upper bounds per instance.
 
